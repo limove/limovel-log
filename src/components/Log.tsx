@@ -1,5 +1,5 @@
 import React from 'react'
-import './log.less'
+import './log.css'
 
 interface Props {}
 

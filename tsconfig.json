@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "outDir": "dist",
     "strictNullChecks": false,
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -23,7 +24,8 @@
     "module": "esnext",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "declaration": true,
+    "emitDeclarationOnly": true
   },
   "exclude": [
     "node_modules",
@@ -31,6 +33,6 @@
     "es"
   ],
   "include": [
-    "src"
+    "src/components"
   ]
 }
