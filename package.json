@@ -1,21 +1,35 @@
 {
   "name": "limovel-log",
-  "version": "0.1.0",
-  "private": true,
+  "version": "2.0.0",
+  "module": "./lib/main.js",
+  "files": [
+    "package.json",
+    "lib/*"
+  ],
   "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.13.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "babel-loader": "8.1.0",
+    "css-loader": "^5.2.1",
+    "less-loader": "^8.1.1",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "style-loader": "^2.0.0",
+    "web-vitals": "^1.0.1",
+    "webpack-cli": "^4.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-pack": "webpack --config ./config/webpack.config.js"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
