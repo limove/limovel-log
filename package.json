@@ -13,6 +13,10 @@
     "typescript": "^4.2.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -31,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-pack": "rm -rf lib && tsc && babel src/components --out-dir lib --copy-files  --extensions \".ts,.tsx\""
+    "build-pack": "node ./tools/build.js"
   },
   "eslintConfig": {
     "extends": [
