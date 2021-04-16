@@ -1,8 +1,8 @@
 {
   "name": "limovel-log",
-  "version": "2.0.0",
-  "module": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "version": "2.0.1",
+  "module": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "files": [
     "package.json",
     "lib/*"
@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-pack": "tsc && babel src/components --out-dir dist --copy-files  --extensions \".ts,.tsx\""
+    "build-pack": "rm -rf lib && tsc && babel src/components --out-dir lib --copy-files  --extensions \".ts,.tsx\""
   },
   "eslintConfig": {
     "extends": [
