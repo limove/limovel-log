@@ -6,7 +6,8 @@ try {
   fs.removeSync('./lib/')
   // Copy front-end files
 
-  childProcess.exec(`tsc && babel src/components --out-dir lib --copy-files  --extensions ".ts,.tsx"`)
+  childProcess.execSync(`tsc && babel src/components --out-dir lib --copy-files  --extensions ".ts,.tsx"`)
+  console.log('success')
   // childProcess.exec('tsc --build tsconfig.prod.json');
 } catch (err) {
   console.log(err)
